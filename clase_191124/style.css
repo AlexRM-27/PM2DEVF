@@ -36,3 +36,13 @@ footer {
     font-weight: bold;
     color: #fc0000ab;
 }
+
+.boton{
+    background-color: #4a00c9; /* Color de fondo */
+    color: #fff; /* Color de texto */
+    padding: 10px 20px; /* Espacio interno */
+    border: none; /* Elimina el borde */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse por encima */
+    font-weight: bold; /* Fuente en negrita */
+    text-align: center; /* Alineación de texto */
+}
