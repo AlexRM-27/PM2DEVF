@@ -30,3 +30,9 @@ footer {
 .enlace:hover{
     color: #747600; /* Color de texto al pasar el cursor por encima */
 }
+
+.subtitulo{
+    font-size: 25px;
+    font-weight: bold;
+    color: #fc0000ab;
+}
