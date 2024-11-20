@@ -46,3 +46,11 @@ footer {
     font-weight: bold; /* Fuente en negrita */
     text-align: center; /* Alineación de texto */
 }
+
+.boton:hover{
+    background-color: #000000; /* Color de fondo al pasar el cursor por encima */
+}
+
+.boton:active{
+    background-color: #0095ff; /* Color de fondo al hacer clic */
+}
