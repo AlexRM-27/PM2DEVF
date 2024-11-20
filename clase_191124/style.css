@@ -26,3 +26,7 @@ footer {
     color: #fff; /* Color de texto */
     padding: 10px; /* Espacio interno */
 }
+
+.enlace:hover{
+    color: #747600; /* Color de texto al pasar el cursor por encima */
+}
