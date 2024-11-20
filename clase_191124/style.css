@@ -9,3 +9,14 @@ header {
     text-align: center; /* Alineación de texto */
     padding: 20px; /* Espacio interno */
 }
+
+footer {
+    background-color: #f045c9; /* Color de fondo */
+    color: #000000; /* Color de texto */
+    text-align: center; /* Alineación de texto */
+    padding: 20px; /* Espacio interno */
+}
+
+.menu{
+    list-style: none; /* Elimina los puntos de la lista */
+}
