@@ -29,6 +29,7 @@ footer {
 
 .enlace:hover{
     color: #747600; /* Color de texto al pasar el cursor por encima */
+    text-decoration: underline; /* Agrega un subrayado al enlace al pasar el cursor por encima */
 }
 
 .subtitulo{
@@ -45,6 +46,9 @@ footer {
     cursor: pointer; /* Cambia el cursor al pasar el mouse por encima */
     font-weight: bold; /* Fuente en negrita */
     text-align: center; /* Alineación de texto */
+    border-color: chocolate; /* Color del borde */
+    border-width: 10px; /* Grosor del borde */
+
 }
 
 .boton:hover{
@@ -53,4 +57,8 @@ footer {
 
 .boton:active{
     background-color: #0095ff; /* Color de fondo al hacer clic */
+}
+
+.boton-contacto{
+    text-align: center; /* Alineación de texto */
 }
