@@ -20,3 +20,9 @@ footer {
 .menu{
     list-style: none; /* Elimina los puntos de la lista */
 }
+
+.enlace{
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: #fff; /* Color de texto */
+    padding: 10px; /* Espacio interno */
+}
