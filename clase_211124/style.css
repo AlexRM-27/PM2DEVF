@@ -4,11 +4,38 @@ body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
-    background-color: #616161;
-    color: #82497d;
+    background-color: #E6E9AF;
+    color: #22177A;
 }
 
 header{
     text-align: center;
-    background-color: #0c486f;
+    background-color: #8EA3A6;
+    color: #22177A;
+    padding: 20px;
+}
+
+section{
+    /* Los valores para la propiedad border son tres separados cada uno por un espacio:
+    1. El grosor
+    2. El tipo de estilo del borde
+    3. El color */
+    border: 1px solid #605EA1;
+    background-color: #605EA1;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px;
+}
+
+h2{
+    color: #000000;
+    text-align: center;
+}
+
+.box{
+    border: 1px solid #4C1F7A;
+    background-color: #EEEEEE;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px;
 }
