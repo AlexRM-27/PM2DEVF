@@ -54,3 +54,9 @@ h2{
     width: 150px;
     height: 30px;
 }
+
+.inline-block{
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+}
