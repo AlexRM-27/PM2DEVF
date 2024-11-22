@@ -5,7 +5,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: #E6E9AF;
-    color: #22177A;
+    color: #000000;
 }
 
 header{
@@ -44,6 +44,13 @@ h2{
 
 .block{
     display: block;
+    width: 150px;
+    height: 30px;
+}
+
+.inline{
+    display: inline;
+    /* Width y Height son ignorados porque los elementos inline no respetan esta propiedad. */
     width: 150px;
     height: 30px;
 }
