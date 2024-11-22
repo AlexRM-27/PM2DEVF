@@ -1,19 +1,39 @@
+/* Variables de css */
+/* - Son valores reutilizables definidos mediante la sintaxis "--nombre-variable".
+-Permiten centralizar la gestión de estilos, facilitando el mantenimiento y los cambios globales.
+- Se pueden usar en cualquier parte del CSS mediante la función ver(--nombre-variable) */
+
+/* Selector root */
+/* - :root es una pseudo-clase que selecciona el elemento raíz del documento html.
+- Es útil para declarar variables globales quie afecten a toda la página.
+- También puedes declarar variables en otros selectores como clases, ID o elementos específicos para limitar el alacance. */
+
+:root{
+    --color-primario: #8EA3A6;
+    --color-background: #E6E9AF;
+    --color-border: #605EA1;
+    --color-texto1: #000000;
+    --color-texto2: #22177A;
+    --color-background1: #219B9D;
+    --color-background2: #EEEEEE;
+}
+
 /* Reset básico */
 
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
-    background-color: #E6E9AF;
-    color: #000000;
+    background-color: var(--color-background);
+    color: var(--color-texto1);
     /* La propiedad line-height controla la altura de las líneas de texto. Podemos verlo como un interlineado. */
     line-height: 1.8;
 }
 
 header{
     text-align: center;
-    background-color: #8EA3A6;
-    color: #22177A;
+    background-color: var(--color-primario);
+    color: var(--color-texto2);
     padding: 20px;
 }
 
@@ -22,21 +42,21 @@ section{
     1. El grosor
     2. El tipo de estilo del borde
     3. El color */
-    border: 1px solid #605EA1;
-    background-color: #219B9D;
+    border: 1px solid var(--color-border);
+    background-color: var(--color-background1);
     border-radius: 10px;
     padding: 15px;
     margin: 20px;
 }
 
 h2{
-    color: #000000;
+    color: var(--color-texto1);
     text-align: center;
 }
 
 .box{
-    border: 1px solid #4C1F7A;
-    background-color: #EEEEEE;
+    border: 1px solid var(--color-border);
+    background-color: var(--color-background2);
     border-radius: 10px;
     /* El valor auto en la propiedad de margin hace que el navegador calcule automáticamente el espacio necesario para centrar un elemento dentro de su contenedor padre, siempre que el elemento tanga un ancho definido. */
     margin: 10px auto;
@@ -65,7 +85,7 @@ h2{
 
 .model{
     padding: 20px;
-    border: 10px solid #4C1F7A;
+    border: 10px solid var(--color-border);
     margin: 20px;
 }
 
@@ -73,8 +93,8 @@ h2{
     box-sizing: content-box;
     margin: 10px;
     padding: 20px;
-    border: 10px solid #4C1F7A;
-    background-color: #E6E9AF;
+    border: 10px solid var(--color-border);
+    background-color: var(--color-background);
     width: 200px;
 }
 
@@ -82,7 +102,7 @@ h2{
     box-sizing: border-box;
     margin: 10px;
     padding: 20px;
-    border: 10px solid #4C1F7A;
-    background-color: #E6E9AF;
+    border: 10px solid var(--color-border);
+    background-color: var(--color-background);
     width: 200px;
 }
