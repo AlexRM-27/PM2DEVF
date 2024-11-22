@@ -68,3 +68,21 @@ h2{
     border: 10px solid #4C1F7A;
     margin: 20px;
 }
+
+.content-box{
+    box-sizing: content-box;
+    margin: 10px;
+    padding: 20px;
+    border: 10px solid #4C1F7A;
+    background-color: #E6E9AF;
+    width: 200px;
+}
+
+.border-box{
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 20px;
+    border: 10px solid #4C1F7A;
+    background-color: #E6E9AF;
+    width: 200px;
+}
