@@ -1,0 +1,14 @@
+/* Reset básico */
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #616161;
+    color: #82497d;
+}
+
+header{
+    text-align: center;
+    background-color: #0c486f;
+}
