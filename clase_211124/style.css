@@ -36,8 +36,9 @@ h2{
     border: 1px solid #4C1F7A;
     background-color: #EEEEEE;
     border-radius: 10px;
+    /* El valor auto en la propiedad de margin hace que el navegador calcule automáticamente el espacio necesario para centrar un elemento dentro de su contenedor padre, siempre que el elemento tanga un ancho definido. */
+    margin: 10px auto;
     padding: 15px;
-    margin: 20px;
     text-align: center;
 }
 
