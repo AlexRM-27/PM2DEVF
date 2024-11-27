@@ -17,11 +17,25 @@ body{
     background-color: var(--color-background);
 }
 
+header, main, footer{
+    margin: 0 auto;
+    padding: 20px;
+}
+
+footer{
+    text-align: center;
+}
+
 /* Según la especificidad se va a dar prioridad al selector que proporcione mejor contexto del elemento que quiere modificar */
 h1{
     color: violet;
 }
 
 header h1{
+    color: brown;
+}
+
+.author{
+    font-weight: bold;
     color: brown;
 }
