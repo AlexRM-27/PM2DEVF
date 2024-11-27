@@ -1,10 +1,11 @@
-/* Reset Básico */
+/* VARIABLES */
 :root{
     --color-primario: #333;
     --color-background: #f4f4f4;
     --color-secundario: #264653;
 }
 
+/* Reset Básico */
 *{
     box-sizing: border-box;
 }
