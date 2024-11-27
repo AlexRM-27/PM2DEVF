@@ -1,0 +1,27 @@
+/* Reset Básico */
+:root{
+    --color-primario: #333;
+    --color-background: #f4f4f4;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    /* Estos generados en body que se heredana a los hijos */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--color-primario);
+    background-color: var(--color-background);
+}
+
+/* Según la especificidad se va a dar prioridad al selector que proporcione mejor contexto del elemento que quiere modificar */
+h1{
+    color: violet;
+}
+
+header h1{
+    color: brown;
+}
