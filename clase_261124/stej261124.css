@@ -2,6 +2,7 @@
 :root{
     --color-primario: #333;
     --color-background: #f4f4f4;
+    --color-secundario: #264653;
 }
 
 *{
@@ -38,4 +39,31 @@ header h1{
 .author{
     font-weight: bold;
     color: brown;
+}
+
+.subtitle{
+    font-size: 18px;
+    color: var(--color-secundario);
+}
+
+.lista-tarea{
+    list-style: none;
+    margin-top: 25px;
+    padding: 0;
+}
+
+.lista-tarea li{
+    margin-bottom: 15px;
+}
+
+.tarea-checkbox{
+    margin-right: 10px;
+    accent-color: var(--color-primario);
+    cursor:pointer;
+}
+
+.tarea-checkbox:checked + .tarea-descripcion{
+    text-decoration: line-through;
+    font-style: italic;
+    color: var(--color-secundario);
 }
