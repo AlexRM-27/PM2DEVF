@@ -1,8 +1,9 @@
 :root{
-    --color1: #CB9DF0;
+    --color1: #640D5F;
     --color2: #F0C1E1;
     --color3: #FDDBBB;
-    --color4: #FFF9BF;
+    --color4: #EEEEEE;
+    --color5: #26355D;
 }
 
 *{
@@ -47,4 +48,53 @@ footer{
 
 .nav-link:hover, .boton-tema:hover{
     color: var(--color2);
+}
+
+/* CARTAS */
+
+.seccion-tarjetas{
+    text-align: center;
+    padding: 20px;
+}
+
+.contenedor-tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 600px;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.card{
+    background-color: var(--color2);
+    color: var(--color5);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    background-color: var(--color3);
+}
+
+.especial{
+    /* Cuando nosotros no indicamos un valor directo con flex-grow, el valor por defecto en todos los items es 0 (cero). */
+    flex-grow: 2; /* Ocupa espacio proporcional */
+}
+
+.carta-hover:hover{
+    transform: rotate(360deg) scale(1.1);
+}
+
+.card:nth-child(1){
+    align-self: flex-end;
+}
+
+.card:nth-child(3){
+    order: -1;
 }
