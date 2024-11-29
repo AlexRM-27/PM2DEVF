@@ -1,10 +1,10 @@
 :root{
     /* Tema claro */
-    --color1: #640D5F;
-    --color2: #F0C1E1;
-    --color3: #FDDBBB;
-    --color4: #EEEEEE;
-    --color5: #26355D;
+    --colorcl1: #640D5F;
+    --colorcl2: #F0C1E1;
+    --colorcl3: #FDDBBB;
+    --colorcl4: #EEEEEE;
+    --colorcl5: #26355D;
     /* Tema oscuro */
     --dark-color1: #9A3791; /* Un púrpura más claro y brillante */
     --dark-color2: #B885AA; /* Rosa tenue para contraste */
@@ -15,19 +15,19 @@
 
 /* Uso de variables según el tema */
 body.tema-claro{
-    --colorcl1: var(--color1);
-    --colorcl2: var(--color2);
-    --colorcl3: var(--color3);
-    --colorcl4: var(--color4);
-    --colorcl5: var(--color5);
+    --color1: var(--colorcl1);
+    --color2: var(--colorcl2);
+    --color3: var(--colorcl3);
+    --color4: var(--colorcl4);
+    --color5: var(--colorcl5);
 }
 
 body.tema-oscuro{
-    --coloros1: var(--dark-color1);
-    --coloros2: var(--dark-color2);
-    --coloros3: var(--dark-color3);
-    --coloros4: var(--dark-color4);
-    --coloros5: var(--dark-color5);
+    --color1: var(--dark-color1);
+    --color2: var(--dark-color2);
+    --color3: var(--dark-color3);
+    --color4: var(--dark-color4);
+    --color5: var(--dark-color5);
 }
 
 *{
@@ -122,6 +122,8 @@ footer{
 .card:nth-child(3){
     order: -1;
 }
+
+/* FORMULARIO */
 
 form{
     display: flex;
