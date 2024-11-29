@@ -1,9 +1,33 @@
 :root{
+    /* Tema claro */
     --color1: #640D5F;
     --color2: #F0C1E1;
     --color3: #FDDBBB;
     --color4: #EEEEEE;
     --color5: #26355D;
+    /* Tema oscuro */
+    --dark-color1: #9A3791; /* Un púrpura más claro y brillante */
+    --dark-color2: #B885AA; /* Rosa tenue para contraste */
+    --dark-color3: #A67F66; /* Tono tierra cálido */
+    --dark-color4: #A1A1A1; /* Neutro medio */
+    --dark-color5: #141A2E;
+}
+
+/* Uso de variables según el tema */
+body.tema-claro{
+    --colorcl1: var(--color1);
+    --colorcl2: var(--color2);
+    --colorcl3: var(--color3);
+    --colorcl4: var(--color4);
+    --colorcl5: var(--color5);
+}
+
+body.tema-oscuro{
+    --coloros1: var(--dark-color1);
+    --coloros2: var(--dark-color2);
+    --coloros3: var(--dark-color3);
+    --coloros4: var(--dark-color4);
+    --coloros5: var(--dark-color5);
 }
 
 *{
@@ -88,7 +112,7 @@ footer{
 }
 
 .carta-hover:hover{
-    transform: rotate(360deg) scale(1.1);
+    transform: rotate(1080deg) scale(1.1);
 }
 
 .card:nth-child(1){
@@ -97,4 +121,24 @@ footer{
 
 .card:nth-child(3){
     order: -1;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 400px;
+    margin: 0 auto;
+}
+
+button{
+    background-color: var(--color2);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--color3);
 }
