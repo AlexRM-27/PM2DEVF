@@ -68,6 +68,30 @@ header{
     border-radius: 10px;
 }
 
+.categorias{
+    padding: 20px;
+    background-color: var(--background-color1);
+    margin: 20px;
+}
+
+.lista-categorias{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.categoria-item{
+    text-align: center;
+    text-decoration: none;
+    color: var(--letter-color);
+}
+
+.categoria-item img{
+    width: 300;
+    height: 300;
+    border-radius: 50%;
+}
+
 footer{
     text-align: center;
     padding: 10px;
