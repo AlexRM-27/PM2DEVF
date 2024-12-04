@@ -1,0 +1,56 @@
+/* Selector global */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --background-color1: #f5f5f5;
+    --letter-color: #333;
+    --background-color2: #000;
+    --letter-color2: #fff;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--background-color1);
+    color: var(--letter-color);
+    line-height: 1.5;
+}
+
+header{
+    background-color: var(--background-color2);
+    padding: 10px 20px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    font-size: 100px;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: var(--letter-color2);
+    font-size: 30px;
+    /* transition: text-decoration 0.3s; */
+}
+
+.nav-links a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+}
