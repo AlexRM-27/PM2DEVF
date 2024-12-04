@@ -10,6 +10,7 @@
     --letter-color: #333;
     --background-color2: #000;
     --letter-color2: #fff;
+    --price-color: #0070f3;
 }
 
 body{
@@ -90,6 +91,43 @@ header{
     width: 300;
     height: 300;
     border-radius: 50%;
+}
+
+.productos{
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.lista-carrusel{
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+    overflow-x: auto; /* El contenedor permita un desplazamiento horizontal */
+    scroll-snap-type: x mandatory; /* Me ayuda a definir como se compórtan los puntos de desplazamiento de mi contenedor
+    x: me inidca que el desplazamiento se está haciendo en el eje x
+    mandatory: me indica que el scroll se ajustará en el siguiente punto definido */
+}
+
+.producto-item{
+    scroll-snap-align: start; /* Me ayuda a definir como los elementos individuales dentro de un contenedor de scroll se alinean cuando se ajustan */
+    text-align: center;
+    text-decoration: none;
+    color: var(--letter-color);
+}
+
+.producto-item img{
+    border-radius: 10px;
+}
+
+.producto-titulo{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.producto-precio{
+    font-size: 14px;
+    color: var(--price-color);
+    font-weight: bold;
 }
 
 footer{
