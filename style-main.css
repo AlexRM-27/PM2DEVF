@@ -1,0 +1,45 @@
+:root{
+     /* Paleta de colores */
+      --color1: #DFF2EB;
+      --color2: #B9E5E8;
+      --color3: #7AB2D3;
+      --color4: #4A628A;
+      --color5: #000000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: var(--color3);
+    color: var(--color5);
+}
+
+header{
+    text-align: center;
+    padding: 20px;
+}
+
+header h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: auto;
+    padding: 20px;
+}
+
+header p{
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+main{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
