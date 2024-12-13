@@ -4,6 +4,8 @@
     --color-background: #f9f9f9;
     --color-principal: #333;
     --color-blanco: #fff;
+    --color-categoria: #e1e1e1;
+    --color-hover: #bdbdbd;
 }
 
 /* Estilos generales */
@@ -42,4 +44,63 @@ footer{
     padding: 1.5rem 0;
     background-color: var(--color-principal);
     color: var(--color-blanco);
+}
+
+.catalogo{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.5rem;
+    align-items: center;
+    justify-items: center;
+}
+
+.categoria{
+    width: 15rem;
+    height: 15rem;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    background-color: var(--color-categoria);
+    transition: background-color 0.3s;
+    animation: aparecer 0.3s ease-out forwards;
+}
+
+.categoria:hover{
+    background-color: var(--color-hover);
+}
+
+.contenido{
+    padding: 0.5rem;
+}
+
+@keyframes aparecer {
+    to {
+        transform: translateY(60px);
+        opacity: 0; 
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1070px) {
+    .catalogo{
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .catalogo{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .catalogo{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1rem;
+    }
 }
